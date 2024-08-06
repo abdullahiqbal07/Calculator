@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="boss">
+            <div class="first">
+                <input type="text" dir="ltr" value="" id="calc" readonly max="999999999">
+            </div>
+            <div>
+                <button onclick="document.getElementById('calc').value = ''">C</button>
+                <button onclick="myfunction('+')">+/-</button>
+                <button onclick="myfunction('%')">%</button>
+                <button onclick="myfunction('/')">/</button>
+                <button onclick="myfunction(7)">7</button>
+                <button onclick="myfunction(8)">8</button>
+                <button onclick="myfunction(9)">9</button>
+                <button onclick="myfunction('*')">x</button>
+                <button onclick="myfunction(4)">4</button>
+                <button onclick="myfunction(5)">5</button>
+                <button onclick="myfunction(6)">6</button>
+                <button onclick="myfunction('-')">-</button>
+                <button onclick="myfunction(1)">1</button>
+                <button onclick="myfunction(2)">2</button>
+                <button onclick="myfunction(3)">3</button>
+                <button onclick="myfunction('+')">+</button>
+                <button onclick="myfunction(0)" id="item0">0</button>
+                <button onclick="myfunction('.')">.</button>
+                <button onclick="operation()">=</button>
+                <!-- <button onclick="document.getElementById('calc').value = eval(document.getElementById('calc').value)">=</button> -->
+            </div>
+        </div>
+    </section>
+    
+    <script src="./js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.3/math.js" integrity="sha512-lAVGwhTndbBUjJlN0Lq4BNuOP0lpuGA9OUCA9bxRZrsehpmkiv8BcYdp91ON3XqJHWmVURGTw1d1W3LCr1k/1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- let x = math.evaluate(document.getElementById('calc').value)  
+
+    document.getElementById('calc').value = x; -->
+</body>
+
+</html>
